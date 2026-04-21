@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+
+<h2>Formulario de Inscripción</h2>
+
+<form method="POST">
+    <div class="mb-3">
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Correo electrónico</label>
+        <input type="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Teléfono</label>
+        <input type="text" name="telefono" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Inscribirme</button>
+</form>
+
+<div class="alert alert-success text-center">
+    {{ mensaje }} 🎉<br>
+    Bienvenido, {{ nombre }}
+</div>
+{% endblock %}

@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e2e8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(15, 23, 42, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #38bdf8;
+}
+
+/* Títulos con efecto neón */
+h1, h2, h3 {
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #0ea5e9;
+}
+
+/* Botones futuristas */
+.btn-primary {
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
+    border: none;
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #3b82f6;
+}
+
+/* Tarjetas */
+.card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    border-radius: 12px;
+}
+
+/* Inputs */
+.form-control {
+    background-color: #020617;
+    border: 1px solid #38bdf8;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 10px #0ea5e9;
+}
+
+/* Animación suave */
+* {
+    transition: all 0.3s ease-in-out;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.glass {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    padding: 20px;
+}
